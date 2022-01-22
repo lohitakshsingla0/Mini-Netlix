@@ -7,12 +7,11 @@ var con = mysql.createPool({
   host: "pgsql.hrz.tu-chemnitz.de",
 });
 
-console.log(con);
-/*con.connect(function(err){
+con.connect(function(err){
     if(err){
-      console.log(err);
-      return;
+    console.log(err);
+    return;
     }
     console.log('Connection established');
-  });
+    }); 
 //module.exports = { pool };*/
