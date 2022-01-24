@@ -1,4 +1,5 @@
 var mysql = require("mysql");
+const { Query } = require("pg");
 var con = mysql.createPool({
   user: "lohitaksh_rw",
   database: "lohitaksh",
@@ -7,11 +8,17 @@ var con = mysql.createPool({
   host: "pgsql.hrz.tu-chemnitz.de",
 });
 
-con.connect(function(err){
+console.log(con.query('select * from users'));
+
+
+
+
+
+/*con.connect(function(err){
     if(err){
-    console.log(err);
-    return;
+      console.log(err);
+      return;
     }
     console.log('Connection established');
-    }); 
+  });
 //module.exports = { pool };*/
