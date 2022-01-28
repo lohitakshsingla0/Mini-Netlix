@@ -11,7 +11,7 @@ const pool = new Pool({
 
 
 
-pool.query('SELECT hello();', (err, res) => {
+pool.query("SELECT add_user(444,'lohitttt');", (err, res) => {
   console.log(err, res)
   pool.end()
 })
