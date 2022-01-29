@@ -11,46 +11,10 @@ const pool = new Pool({
 
 
 
-pool.query("SELECT add_user(444,'lohitttt');", (err, res) => {
+pool.query("SELECT delete_person(15);", (err, res) => {
   console.log(err, res)
   pool.end()
 })
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const client = new Client({
-  user: "lohitaksh_rw",
-  database: "lohitaksh",
-  password: "aex3Hahgane",
-  port: 5432,
-  host: "pgsql.hrz.tu-chemnitz.de",
-})
-client.connect()
-client.query('SELECT NOW()', (err, res) => {
-  console.log(err, res)
-  client.end()
-})*/
