@@ -11,7 +11,7 @@ const pool = new Pool({
 
 
 
-pool.query("SELECT delete_person(15);", (err, res) => {
+pool.query("select add_movie_rating(22,56,5);", (err, res) => {
   console.log(err, res)
   pool.end()
 })
