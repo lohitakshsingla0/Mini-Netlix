@@ -17,4 +17,4 @@ pool.query("SELECT delete_person(15);", (err, res) => {
 })
 
 
-
+module.exports = pool
